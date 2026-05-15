@@ -1,0 +1,37 @@
+<script lang="ts">
+    /**
+     * @component
+     * Icon built with Radix Icons design.
+     * Check their page: https://www.radix-ui.com/icons
+     * * @example
+     * ```svelte
+     * <Avatar size={24} color="red" />
+     * ```
+     */
+    interface Props {
+        /**
+         * Icon size in pixels (Height & Width).
+         * @default 15
+         */
+        size?: number;
+        
+        /**
+         * Icon color. Accepts any valid CSS value (currentColor, hex, rgb, variable, etc.).
+         * @default 'currentColor'
+         */
+        color?: string;
+    }
+    let { size = 15, color = 'currentColor', ...rest }: Props = $props();
+</script>
+
+<svg
+    width={size}
+    height={size}
+    viewBox="0 0 15 15"
+	{color}
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+>
+// Optimized svg
+    <path fill="currentColor" d="M7.5.877a6.623 6.623 0 1 1 0 13.246A6.623 6.623 0 0 1 7.5.877m0 9.098a4.02 4.02 0 0 0-3.48 2.004 5.65 5.65 0 0 0 3.48 1.193 5.65 5.65 0 0 0 3.479-1.194A4.02 4.02 0 0 0 7.5 9.975m0-8.149a5.674 5.674 0 0 0-4.192 9.494A4.97 4.97 0 0 1 7.5 9.025c1.761 0 3.308.916 4.192 2.294A5.674 5.674 0 0 0 7.5 1.826m0 2.33a2.35 2.35 0 1 1 0 4.698 2.35 2.35 0 0 1 0-4.699m0 .949a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8"/>
+</svg>

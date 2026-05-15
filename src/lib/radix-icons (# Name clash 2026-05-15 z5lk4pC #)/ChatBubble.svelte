@@ -1,0 +1,37 @@
+<script lang="ts">
+    /**
+     * @component
+     * Icon built with Radix Icons design.
+     * Check their page: https://www.radix-ui.com/icons
+     * * @example
+     * ```svelte
+     * <ChatBubble size={24} color="red" />
+     * ```
+     */
+    interface Props {
+        /**
+         * Icon size in pixels (Height & Width).
+         * @default 15
+         */
+        size?: number;
+        
+        /**
+         * Icon color. Accepts any valid CSS value (currentColor, hex, rgb, variable, etc.).
+         * @default 'currentColor'
+         */
+        color?: string;
+    }
+    let { size = 15, color = 'currentColor', ...rest }: Props = $props();
+</script>
+
+<svg
+    width={size}
+    height={size}
+    viewBox="0 0 15 15"
+	{color}
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+>
+// Optimized svg
+    <path fill="currentColor" d="M12.756 2.013A2.5 2.5 0 0 1 15 4.5v5a2.5 2.5 0 0 1-2.244 2.487L12.5 12H11v2.5a.5.5 0 0 1-.854.354L7.294 12H2.5A2.5 2.5 0 0 1 0 9.5v-5A2.5 2.5 0 0 1 2.5 2h10zM2.5 3A1.5 1.5 0 0 0 1 4.5v5A1.5 1.5 0 0 0 2.5 11h5l.098.01a.5.5 0 0 1 .256.136L10 13.294V11.5a.5.5 0 0 1 .5-.5h2l.153-.008A1.5 1.5 0 0 0 14 9.5v-5l-.008-.153a1.5 1.5 0 0 0-1.339-1.34L12.5 3z"/>
+</svg>

@@ -1,0 +1,37 @@
+<script lang="ts">
+    /**
+     * @component
+     * Icon built with Radix Icons design.
+     * Check their page: https://www.radix-ui.com/icons
+     * * @example
+     * ```svelte
+     * <LetterCaseCapitalize size={24} color="red" />
+     * ```
+     */
+    interface Props {
+        /**
+         * Icon size in pixels (Height & Width).
+         * @default 15
+         */
+        size?: number;
+        
+        /**
+         * Icon color. Accepts any valid CSS value (currentColor, hex, rgb, variable, etc.).
+         * @default 'currentColor'
+         */
+        color?: string;
+    }
+    let { size = 15, color = 'currentColor', ...rest }: Props = $props();
+</script>
+
+<svg
+    width={size}
+    height={size}
+    viewBox="0 0 15 15"
+	{color}
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+>
+// Optimized svg
+    <path fill="currentColor" d="M3.69 2.75a.5.5 0 0 1 .466.32l3.21 8.32.028.097a.5.5 0 0 1-.915.353l-.045-.09-1.051-2.725H2.01L.967 11.75l-.046.09a.5.5 0 0 1-.888-.448l3.19-8.32.033-.07a.5.5 0 0 1 .433-.251m7.208 2.457a3 3 0 0 1 2.255 1.018V5.72a.451.451 0 0 1 .9 0v5.81a.45.45 0 0 1-.9 0v-.51a3.06 3.06 0 0 1-2.255.993c-1.54 0-2.89-1.38-2.89-3.404.001-1.923 1.25-3.402 2.89-3.402m.188.85c-.978.001-2.05.91-2.05 2.552 0 1.544.972 2.552 2.05 2.552.884 0 1.685-.668 2.067-1.366v-2.49c-.39-.722-1.211-1.247-2.067-1.247m-8.75 2.119h2.719L3.69 4.643z"/>
+</svg>

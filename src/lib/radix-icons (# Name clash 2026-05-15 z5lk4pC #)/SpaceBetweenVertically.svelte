@@ -1,0 +1,37 @@
+<script lang="ts">
+    /**
+     * @component
+     * Icon built with Radix Icons design.
+     * Check their page: https://www.radix-ui.com/icons
+     * * @example
+     * ```svelte
+     * <SpaceBetweenVertically size={24} color="red" />
+     * ```
+     */
+    interface Props {
+        /**
+         * Icon size in pixels (Height & Width).
+         * @default 15
+         */
+        size?: number;
+        
+        /**
+         * Icon color. Accepts any valid CSS value (currentColor, hex, rgb, variable, etc.).
+         * @default 'currentColor'
+         */
+        color?: string;
+    }
+    let { size = 15, color = 'currentColor', ...rest }: Props = $props();
+</script>
+
+<svg
+    width={size}
+    height={size}
+    viewBox="0 0 15 15"
+	{color}
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+>
+// Optimized svg
+    <path fill="currentColor" d="M13.5 14a.5.5 0 0 1 0 1h-12a.5.5 0 0 1 0-1H6v-4a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v4zm0-14a.5.5 0 0 1 0 1H9v4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V1H1.5a.5.5 0 1 1 0-1z"/>
+</svg>

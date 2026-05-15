@@ -1,0 +1,37 @@
+<script lang="ts">
+    /**
+     * @component
+     * Icon built with Radix Icons design.
+     * Check their page: https://www.radix-ui.com/icons
+     * * @example
+     * ```svelte
+     * <IdCard size={24} color="red" />
+     * ```
+     */
+    interface Props {
+        /**
+         * Icon size in pixels (Height & Width).
+         * @default 15
+         */
+        size?: number;
+        
+        /**
+         * Icon color. Accepts any valid CSS value (currentColor, hex, rgb, variable, etc.).
+         * @default 'currentColor'
+         */
+        color?: string;
+    }
+    let { size = 15, color = 'currentColor', ...rest }: Props = $props();
+</script>
+
+<svg
+    width={size}
+    height={size}
+    viewBox="0 0 15 15"
+	{color}
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+>
+// Optimized svg
+    <path fill="currentColor" d="M14 3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1l-.103-.005A1 1 0 0 1 0 11V4a1 1 0 0 1 1-1zM1 11h13V4H1zm4.75-6a.25.25 0 0 1 .25.25v4.5a.25.25 0 0 1-.25.25h-3.5A.25.25 0 0 1 2 9.75v-4.5A.25.25 0 0 1 2.25 5zm6.75 4a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zm-2-2a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm1-2a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1z"/>
+</svg>

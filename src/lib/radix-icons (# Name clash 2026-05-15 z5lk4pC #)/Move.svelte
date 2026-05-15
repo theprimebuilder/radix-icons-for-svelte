@@ -1,0 +1,37 @@
+<script lang="ts">
+    /**
+     * @component
+     * Icon built with Radix Icons design.
+     * Check their page: https://www.radix-ui.com/icons
+     * * @example
+     * ```svelte
+     * <Move size={24} color="red" />
+     * ```
+     */
+    interface Props {
+        /**
+         * Icon size in pixels (Height & Width).
+         * @default 15
+         */
+        size?: number;
+        
+        /**
+         * Icon color. Accepts any valid CSS value (currentColor, hex, rgb, variable, etc.).
+         * @default 'currentColor'
+         */
+        color?: string;
+    }
+    let { size = 15, color = 'currentColor', ...rest }: Props = $props();
+</script>
+
+<svg
+    width={size}
+    height={size}
+    viewBox="0 0 15 15"
+	{color}
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+>
+// Optimized svg
+    <path fill="currentColor" d="M7.5 9a.5.5 0 0 1 .5.5v3.114l.932-.932a.45.45 0 0 1 .637.637l-1.75 1.75a.45.45 0 0 1-.567.057l-.07-.057-1.75-1.75-.058-.07a.45.45 0 0 1 .624-.625l.07.058.932.931V9.5a.5.5 0 0 1 .5-.5m4.182-3.568a.45.45 0 0 1 .566-.058l.07.058 1.75 1.75.058.07a.45.45 0 0 1-.057.567l-1.75 1.75a.45.45 0 0 1-.637-.637L12.613 8H9.5a.5.5 0 0 1 0-1h3.113l-.931-.931-.058-.07a.45.45 0 0 1 .058-.567m-9 0a.45.45 0 0 1 .637.637L2.387 7H5.5l.1.01a.5.5 0 0 1 0 .98L5.5 8H2.387l.932.932.057.07a.45.45 0 0 1-.624.624l-.07-.057-1.75-1.75a.45.45 0 0 1 0-.637zM7.252.874a.45.45 0 0 1 .567.058l1.75 1.75.057.07a.45.45 0 0 1-.624.624l-.07-.057L8 2.387V5.5l-.01.1a.5.5 0 0 1-.98 0L7 5.5V2.387l-.931.932a.45.45 0 0 1-.637-.637l1.75-1.75z"/>
+</svg>
