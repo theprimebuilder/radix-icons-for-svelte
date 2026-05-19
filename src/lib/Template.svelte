@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { SVGAttributes } from 'svelte/elements';
+
 	/**
 	 *@component
 	 * Icon build with Radix Icons design
@@ -8,7 +10,7 @@
 	 * <ArrowBottomLeft size={24} color="red" />
 	 * ```
 	 */
-	interface Props {
+	interface Props extends SVGAttributes<SVGElement> {
 		/** * Icon size in pixel Height & Width
 		 * @default 15
 		 */

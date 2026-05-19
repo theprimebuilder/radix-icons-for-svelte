@@ -4,6 +4,9 @@
 [![license](https://img.shields.io/npm/l/@theprimebuilder/radix-icons-for-svelte?color=f5f5f7&labelColor=1c1c1e&style=flat-square)](./LICENSE)
 [![svelte](https://img.shields.io/badge/svelte-%23FF3E00.svg?style=flat-square&logo=svelte&logoColor=white)](https://svelte.dev)
 
+## Update
+Version 1.0.4: Fixed the class attribute issue by extending the native SVG attributes.
+
 ## Information
 
 Note: This package has been created to provide **Radix Icons** for Svelte 5 (using Runes), as the official Radix Icons package natively supports only React.

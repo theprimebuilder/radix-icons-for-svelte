@@ -1,4 +1,5 @@
 <script lang="ts">
+		import type { SVGAttributes } from 'svelte/elements';
     /**
      * @component
      * Icon built with Radix Icons design.
@@ -8,7 +9,7 @@
      * <ExternalLink size={24} color="red" />
      * ```
      */
-    interface Props {
+    interface Props extends SVGAttributes<SVGElement> {
         /**
          * Icon size in pixels (Height & Width).
          * @default 15
